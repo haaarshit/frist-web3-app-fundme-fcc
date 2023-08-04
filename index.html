@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Fund Me</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            background-color: black;
+            /* align-items: center; */
+            height: 100vh;
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        h1{
+            color: white;
+        }
+        div {
+            display: flex;
+            flex-direction: column;
+        }
+
+        button {
+            background-color: rgb(16, 14, 14);
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 25px;
+            padding: 10px;
+            border: 1px solid gray;
+            text-transform: capitalize;
+            color: white;
+            margin-top: 5px;
+            cursor: pointer;
+        }
+
+        input{
+            padding: 5px;
+            background-color: black;
+            color: white;
+            border: 1px solid gray;
+        }
+        label {
+            padding: 5px;
+            /* background-color: black; */
+            color: white;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+
+        <h1>Fund Me APP</h1>
+        <button id="connectBtn">connect</button>
+        <div style="margin: 10px 0;">
+            <label for="fund">ETH Amount</label>
+            <input type="text" name="fund" placeholder="0.1" id="ethamount">
+            <button id="fundBtn">Fund</button >
+        </div>
+        <button id="balanceBtn">GetBalance</button>
+        <button id="withdrawBtn" style="background-color: green;">Withdraw</button>
+        <!-- form -->
+
+    </div>
+
+</body>
+<script src="index.js" type="module"></script>
+
+</html>
